@@ -93,7 +93,7 @@ st.markdown("<h3 style='text-align: center;'>💬 Ask Your Legal Questions</h3>"
 user_question = st.chat_input("Type your question here...")
 
 if user_question:
-    with st.spinner("Fetching legal insights..."):
+    with st.spinner("Fetching insights..."):
         response = user_input(user_question)
 
  
