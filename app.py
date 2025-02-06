@@ -59,14 +59,14 @@ def user_input(user_quest):
     
     print(response)
     st.write("Reply: ", response["output_text"])
-# ---- Streamlit Page Configuration ----
+
 st.set_page_config(page_title="Chat with PDF", layout="wide")
 
-# ---- UI Enhancements ----
+
 st.markdown(
     """
     <h1 style="text-align: center; color: #4A90E2;">📜 Chat with PDF using Gemini 🤖</h1>
-    <p style="text-align: center; font-size: 16px;">Upload legal PDFs and ask AI-powered questions!</p>
+    <p style="text-align: center; font-size: 16px;">Upload your PDFs and ask AI-powered questions!</p>
     <hr>
     """,
     unsafe_allow_html=True,
@@ -96,7 +96,7 @@ if user_question:
     with st.spinner("Fetching legal insights..."):
         response = user_input(user_question)
 
-    # Display response in chat-style format
+ 
 
 
 # ---- Footer ----
